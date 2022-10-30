@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Year({ setDataFromYear, dataFromYear }) {
+function Year({ setDataFromYear }) {
   const [year, setYear] = useState('')
 
   const yearList = []
