@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Month(props) {
+function Month({ setDataFromMonth }) {
   const [month, setMonth] = useState('')
 
   const monthList = []
@@ -17,7 +17,7 @@ function Month(props) {
         value={month}
         onChange={(e) => {
           setMonth(e.target.value)
-          props.setDataFromMonth(e.target.value)
+          setDataFromMonth(e.target.value)
         }}
       >
         <option value="">---請選擇---</option>

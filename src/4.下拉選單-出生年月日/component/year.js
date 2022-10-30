@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Year(props) {
+function Year({ setDataFromYear, dataFromYear }) {
   const [year, setYear] = useState('')
 
   const yearList = []
@@ -17,7 +17,7 @@ function Year(props) {
         value={year}
         onChange={(e) => {
           setYear(e.target.value)
-          props.setDataFromYear(e.target.value)
+          setDataFromYear(e.target.value)
         }}
       >
         <option value="">---請選擇---</option>
