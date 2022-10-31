@@ -10,9 +10,9 @@ function Bmi() {
       <br />
       <input
         type="number"
-        value={weight}
+        value={weight === 0 ? '' : weight}
         onChange={(e) => {
-          setWeight(e.target.value)
+          setWeight(+e.target.value) //+保持state的資料類型一致是數字
         }}
       />
       <br />
@@ -20,18 +20,19 @@ function Bmi() {
       <br />
       <input
         type="number"
-        value={height}
+        value={height === 0 ? '' : height}
         onChange={(e) => {
-          setHeight(e.target.value)
+          setHeight(+e.target.value)
         }}
       />
       <br />
       <label htmlFor="">BMI:</label>
       <br />
-      <input type="number" value={result} />
+      <input type="number" value={result === 0 ? '' : result.toFixed(1)} />
+      {/* toFixed格式化數字用,保留一位小數之後四捨五入 */}
       <button
-        onClick={(e) => {
-          setResult(Math.round(weight / Math.pow(height / 100, 2)))
+        onClick={() => {
+          setResult(weight / Math.pow(height / 100, 2))
         }}
       >
         提交

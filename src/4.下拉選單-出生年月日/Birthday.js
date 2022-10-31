@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Year from './component/year'
-import styled from 'styled-components'
 import Month from './component/month'
 import Day from './component/day'
 import Result from './component/result'
+import styled from 'styled-components'
 
 function Birthday() {
   const [dataFromYear, setDataFromYear] = useState('')

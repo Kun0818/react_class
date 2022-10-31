@@ -11,7 +11,6 @@ function Year({ setDataFromYear }) {
   //console.log(yearList)
   return (
     <>
-      {' '}
       <h1>西元年</h1>
       <select
         value={year}
