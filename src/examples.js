@@ -11,6 +11,8 @@ import Checkbox from './1028/4.Ckeckbox'
 import Select from './1028/5.Select'
 import Bmi from './3.BMI線上表單/BMI'
 import Birthday from './4.下拉選單-出生年月日/Birthday'
+import TodoList from './1031/1.todoList/TodoList'
+import MultipleInput from './1101/MultipleInput'
 
 export const examples = [
   { name: '1025-1 計數器', path: './1025/Counter.js', component: Counter },
@@ -73,5 +75,15 @@ export const examples = [
     name: '下拉選單-出生年月日',
     path: './1027/Parent.js',
     component: Birthday,
+  },
+  {
+    name: '1031 TodoList',
+    path: './1027/Parent.js',
+    component: TodoList,
+  },
+  {
+    name: '1101 多個表單元素共用單一state',
+    path: './1027/Parent.js',
+    component: MultipleInput,
   },
 ]
