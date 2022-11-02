@@ -13,6 +13,9 @@ import Bmi from './3.BMI線上表單/BMI'
 import Birthday from './4.下拉選單-出生年月日/Birthday'
 import TodoList from './1031/1.todoList/TodoList'
 import MultipleInput from './1101/MultipleInput'
+import HtmlForm from './1102/HtmlForm'
+import LifeCycle from './1102/生命週期/LifeCycle'
+import User from './1102/載入會員資料/User'
 
 export const examples = [
   { name: '1025-1 計數器', path: './1025/Counter.js', component: Counter },
@@ -85,5 +88,20 @@ export const examples = [
     name: '1101 多個表單元素共用單一state',
     path: './1027/Parent.js',
     component: MultipleInput,
+  },
+  {
+    name: '1102 Form表單驗證',
+    path: './1027/Parent.js',
+    component: HtmlForm,
+  },
+  {
+    name: '1102 生命週期',
+    path: './1027/Parent.js',
+    component: LifeCycle,
+  },
+  {
+    name: '1102 從伺服器載入資料',
+    path: './1027/Parent.js',
+    component: User,
   },
 ]
